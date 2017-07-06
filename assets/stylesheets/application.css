@@ -606,8 +606,7 @@ main {
   text-shadow: 0 0 50px black; }
 
 .tagline {
-  width: 80%;
-  margin-left: 10%;
+  width: 100%;
   text-shadow: 0 0 15px black; }
 
 .footer-contact {
