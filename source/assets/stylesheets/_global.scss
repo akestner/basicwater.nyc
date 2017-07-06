@@ -1,19 +1,92 @@
 body {
   background-color: $light-gray;
-  color: $medium-gray;
+  color: #fff;
 }
 
-.delete-me {
-  align-items: center;
+h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.25em;
+}
+
+@include media(min-width $medium-screen) {
+  h1 {
+    font-size: 5em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+}
+
+@include media(min-width $large-screen) {
+  h1 {
+    font-size: 8em;
+  }
+}
+
+.container {
+  @include outer-container();
+}
+
+.row {
+  @include omega();
+}
+
+main {
   display: flex;
+  align-items: center;
   justify-content: center;
   height: 100vh;
 
-  .container {
-    text-align: center;
+  text-align: center;
+  background: url($image-path + 'basic-water-medium.jpg') no-repeat 50% 50% fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+}
 
-    h1 {
-      font-weight: 200;
+.title {
+  margin: -2em 0 1em;
+  //text-shadow: 0 0 50px black;
+}
+
+@include media(min-width $medium-screen) {
+  .title {
+    margin: -1.5em 0 0.25em;
+  }
+}
+
+.tagline {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.tagline, .footer-contact {
+  //text-shadow: 0 0 60px black;
+}
+
+footer {
+  text-align: center;
+  margin-top: -2em;
+
+  a {
+    color: #fff;
+
+    &:active {
+      color: #fff;
+    }
+
+    &:hover {
+      color: $light-gray;
+    }
+
+    &:visited {
+      color: #fff;
     }
   }
 }

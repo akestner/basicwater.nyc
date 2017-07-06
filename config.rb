@@ -1,3 +1,5 @@
+require 'slim'
+
 activate :directory_indexes
 activate :autoprefixer
 
@@ -18,6 +20,9 @@ end
 
 configure :build do
   activate :relative_assets
+  activate :google_analytics do |ga|
+    ga.tracking_id = 'UA-102151341-1'
+  end
 end
 
 activate :deploy do |deploy|

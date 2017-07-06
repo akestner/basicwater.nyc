@@ -12,6 +12,12 @@ fi
 echo "Installing Dependencies..."
 bundle install
 
+# Make sure Proteus is installed
+if [ "$(gem query -i -n proteus-kits)" = "false" ]; then
+  echo "Installing Proteus..."
+  gem install proteus-kits
+fi
+
 # Remove Git remote if it's still the default repo
 if [ "$(git config --get remote.origin.url)" = "git@github.com:thoughtbot/proteus-middleman.git" ]; then
   echo "What is your repo url? Enter URL or leave blank"
