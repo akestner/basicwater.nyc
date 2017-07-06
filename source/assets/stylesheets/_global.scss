@@ -18,7 +18,7 @@ h2 {
   }
 
   h2 {
-    font-size: 1.5em;
+    font-size: 2em;
   }
 }
 
@@ -43,7 +43,7 @@ main {
   height: 100vh;
 
   text-align: center;
-  background: url($image-path + 'basic-water-medium.jpg') no-repeat 50% 50% fixed;
+  background: url($image-path + 'basic-water-medium.jpeg') no-repeat 50% 50% fixed;
   background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -51,23 +51,18 @@ main {
 }
 
 .title {
-  margin: -2em 0 1em;
-  //text-shadow: 0 0 50px black;
-}
-
-@include media(min-width $medium-screen) {
-  .title {
-    margin: -1.5em 0 0.25em;
-  }
+  margin: -1.25em 0 1em;
+  text-shadow: 0 0 50px black;
 }
 
 .tagline {
   width: 80%;
   margin-left: 10%;
+  text-shadow: 0 0 15px black;
 }
 
-.tagline, .footer-contact {
-  //text-shadow: 0 0 60px black;
+.footer-contact {
+  text-shadow: 0 0 50px black;
 }
 
 footer {
