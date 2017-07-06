@@ -1,12 +1,9 @@
-# thoughtbot Middleman Starter
-
-**Note:** This project is no longer being actively maintained.
+# Basic Water Marketing Site
 
 ## About
 
-This starter kit for Middleman follows the
-[thoughtbot styleguide](https://github.com/thoughtbot/guides) and includes our
-favorite front end tools.
+Our static marketing site powered by [Middleman](https://middlemanapp.com/)
+located at [http://www.basicwater.nyc/](http://www.basicwater.nyc/).
 
 ## About Middleman
 
@@ -17,7 +14,7 @@ Pages.
 
 ## Includes
 
-* [HAML](http://haml.info):
+* [Slim](http://slim-lang.com/):
   Simple template markup
 * [Coffeescript](http://coffeescript.org):
   Write javascript with simpler syntax
@@ -33,56 +30,35 @@ Pages.
   Reloads the page when files change
 * [Middleman Deploy](https://github.com/karlfreeman/middleman-deploy):
   Deploy your Middleman build via rsync, ftp, sftp, or git (deploys to Github Pages by default)
-
-We also recommend [Refills](http://refills.bourbon.io/) for prepackaged interface patterns and [Proteus](http://github.com/thoughtbot/proteus) for a collection of useful
-starter kits to help you prototype faster.
+* [Proteus](http://thoughtbot.github.io/proteus/):
+  Convenient Middleman shortcuts
 
 ## Getting Started
 
-Set up your project in your code directory
+Clone this repo
 ```
-git clone https://github.com/thoughtbot/proteus-middleman.git your-project-folder
-cd your-project-folder
-git remote rm origin
-git remote add origin your-git-url
+git clone git@github.com:basic-water/basicwater.nyc.git
+cd basicwater.nyc
 ```
 
 Install dependencies:
 ```
-bundle install
+./bin/setup
 ```
 
-Run the server
+Run the server:
 ```
-bundle exec middleman
-```
-
-Deploy to Github Pages
-```
-bundle exec middleman deploy
+proteus server
 ```
 
-Or install the [Proteus gem](https://github.com/thoughtbot/proteus) and enjoy some shortcuts.
+## Deploying
+
+Deploy to Github Pages:
+```
+proteus deploy
+```
 
 ## Directories
 
 Stylesheets, fonts, images, and JavaScript files go in the `/source/assets/` directory.
 Vendor stylesheets and JavaScripts should go in each of their `/vendor/` directories.
-
-## Contributing
-
-If you have problems, please create a
-[GitHub Issue](https://github.com/thoughtbot/proteus-middleman/issues).
-
-Have a fix or want to add a feature?
-[Pull Requests](https://github.com/thoughtbot/proteus-middleman/pulls) are welcome!
-
-## Credits
-
-[![thoughtbot](http://images.thoughtbot.com/bourbon/thoughtbot-logo.svg)](http://thoughtbot.com)
-
-thoughtbot Middleman Starter is maintained and funded by [thoughtbot, inc](http://thoughtbot.com). Thank you to all of [the contributors](https://github.com/thoughtbot/proteus-middleman/contributors)!
-
-## License
-
-Copyright © 2014–2015 [thoughtbot, inc](http://thoughtbot.com). thoughtbot Middleman Starter is free software, and may be redistributed under the terms specified in the [license](https://github.com/thoughtbot/bourbon/blob/master/LICENSE.md).
