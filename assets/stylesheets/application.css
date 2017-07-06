@@ -567,7 +567,7 @@ h2 {
     font-size: 5em; }
 
   h2 {
-    font-size: 1.5em; } }
+    font-size: 2em; } }
 @media screen and (min-width: 900px) {
   h1 {
     font-size: 8em; } }
@@ -595,21 +595,23 @@ main {
           justify-content: center;
   height: 100vh;
   text-align: center;
-  background: url("/assets/images/basic-water-medium.jpg") no-repeat 50% 50% fixed;
+  background: url("../images/basic-water-medium.jpeg") no-repeat 50% 50% fixed;
   background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover; }
 
 .title {
-  margin: -2em 0 1em; }
+  margin: -1.25em 0 1em;
+  text-shadow: 0 0 50px black; }
 
-@media screen and (min-width: 600px) {
-  .title {
-    margin: -1.5em 0 0.25em; } }
 .tagline {
   width: 80%;
-  margin-left: 10%; }
+  margin-left: 10%;
+  text-shadow: 0 0 15px black; }
+
+.footer-contact {
+  text-shadow: 0 0 50px black; }
 
 footer {
   text-align: center;
